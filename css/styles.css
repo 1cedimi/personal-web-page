@@ -1,0 +1,282 @@
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*.menu{
+    	display: block;
+	position: relative;
+	width: 300px;
+	height: 415px;
+	margin: 1.5em 2.5em;
+	color: #fff;
+	flex: none;
+	perspective: 1000px;
+	float: right;
+	z-index: 5;
+           
+}*/
+
+
+.intro{
+    text-align: left;
+    padding-left: 60px;
+    color:black;
+}
+
+#icons{
+    margin-right:20px;
+}
+.menu a {
+	display: inline-block;
+	margin: 0.35em 0.1em;
+	padding: 0.5em 1.2em;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border-radius: 2px;
+	font-size: 100%;
+	border: 2px solid transparent;
+	border-color: #383a3c;
+	color: #ff6800;
+}
+
+.menu a:hover{
+        background-color: #efca5b;
+    	border-color: grey;
+}
+
+.skills{
+    margin-top:200px;
+    width: 600px; float: right;
+}
+.skills2{
+    margin-top:200px;
+    width: 600px; float: left;
+}
+
+#back_button{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+footer{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+/* Content */
+.content {
+	padding: 0 0 4em;
+	height: 800px;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+/*.content:not(:first-child) {
+	padding: 4em 0;
+}*/
+.content--c1 {
+	padding-bottom: 500px;
+}
+.content--c2 {
+	background: orange;
+        padding-bottom: 500px;
+}
+.content--c3 {
+	background: black;
+}
+.content--c5 {
+	background: #c7e0d3;
+		z-index: 0;
+}
+
+
+/*conent not resize background from full page*/
+@media screen and (max-width: 55.625em) {
+	.content {
+		height: auto;
+	}
+}
+/*-------------------------*/
+
+.tilter {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 415px;
+	margin: 1.5em 2.5em;
+	color: #fff;
+	flex: none;
+	perspective: 1000px;
+	float: right;
+	z-index: 5;
+}
+
+.tilter * {
+        pointer-events: none;
+}
+
+
+.tilter:hover,
+.tilter:focus {
+        color: #fff;
+        outline: none;
+}
+
+.tilter__figure,
+.tilter__deco,
+.tilter__caption {
+	will-change: transform;
+}
+
+
+.tilter__figure,
+.tilter__image {
+	border-radius: 45px;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.tilter__figure > * {
+	border-radius: 45px;
+	transform: translateZ(0px); /*Force correct stacking order*/
+}
+
+.smooth .tilter__figure,
+.smooth .tilter__deco--lines,
+.smooth .tilter__deco--shine div,
+.smooth .tilter__caption {
+	transition: transform 0.2s ease-out;
+}
+
+.tilter__figure::before {
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.tilter__deco--shine div {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.tilter__caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 2em;
+}
+
+.tilter__title {
+	margin: 0;
+	font-weight: normal;
+	font-size: 2.5em;
+	font-family: 'Abril Fatface', serif;
+	line-height: 1;
+}
+
+.tilter__description {
+	margin: 1em 0 0 0;
+	font-size: 0.85em;
+	letter-spacing: 0.15em;
+}
+
+/* Individual styles */
+
+/* Example 1 (Default) */
+.tilter--1 .tilter__figure::before {
+	box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+}
+
+
+
+/*ripples*/
+
+* { margin: 0; padding: 0; }
+html {
+	height: 100%;
+}
+body {
+	color: #fff;
+	font-size: 16px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-position: 50% 0;
+	height: 100%;
+	text-align: center;
+}
+
+body:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+/*.content content--c1*/
+main {
+	display: inline-block;
+	vertical-align: middle;
+/*	background: url(img/bg.jpg);*/
+	padding:  10px;
+	max-width: 600px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+/*.error {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	color: #f00;
+	padding: 5px;
+	max-width: 50%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+

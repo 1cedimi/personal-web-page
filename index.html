@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="IT, Inofrmation,Technology,Web,Development,CV,Persnal,Page">
+        <meta name="description" content="Personal web page of IT developer. You can see experience and projcets">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>               
+        <script>
+        $(document).ready(function(){
+            $("#aboutme_button").click(function(){
+                $("#aboutme").toggle(500);
+            });
+            $("#skill_button").click(function(){
+                $(".skills").toggle(500);
+                $(".skills2").toggle(500);
+            });
+        });
+        </script>
+        <title>CV</title>
+    </head>
+    <body class="loading">
+        <main id="intro" >
+            <section class="content content--c1">
+                <a href="#" class="tilter tilter--1"><!--Image effects-->
+                    <figure class="tilter__figure">
+                            <img class="tilter__image" src="img/photo.jpeg" alt="Photo is missing" />
+                            <div class="tilter__deco tilter__deco--shine"><div></div></div>
+                            <figcaption class="tilter__caption">
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">Web Developer</p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                    </figure>
+                </a>
+ 
+                <div class="intro">
+                    <p>Name: Dmitri Kalinin</p>
+                    <p>Nationality: Estonian</p>
+                    <p>Date of Birth: 25/06/1992</p>
+                    <p>Languages: Russian, English, Finnish</p>
+                    <p>E-Mail: dmitri.kalinin7@gmail.com</p>
+                </div>
+                <div >
+                    <a href="https://www.linkedin.com/in/dmitri-kalinin-1109247a">
+                    <img src="img/icon_linkedin.png" alt="LinkedIn" height="50" width="50"/></a>
+                    <a href="https://github.com/HeyYep">
+                    <img src="img/icon_github.png" alt="GitHub" height="50" width="50"/></a>
+                    <a href="https://www.instagram.com/1cedimi">
+                    <img src="img/icon_instagram.png" alt="Instagram" height="50" width="50"/></a>
+                </div>
+                <nav class="menu"><br><br><br><br><br><br><br><br><br><br>
+                    <a id="aboutme_button">About me</a>
+                    <a id="skill_button">Skills</a>
+                </nav>
+                
+                <div class="intro" id="aboutme" style="display:none;">
+                    <p>
+                    I enjoy sports particularly football and volleyball.
+                    Addicted to sauna. Love to travel and experience different cultures.
+                    </p>
+                </div>
+
+<!--                <nav class="menu"><br><br><br><br>
+                    <a href="site.html#education">Education</a>
+                    <a href="site.html#experience">Experience</a>
+                    <a href="site.html#projects">Projects</a>
+                </nav>-->
+            </section>
+        </main>
+
+        <div class="skills" style="display:none;">
+            <img src="img/skill_html.png" alt="HTML" height="100" width="100"/>
+            <img src="img/skill_css.png" alt="CSS" height="100" width="100"/>
+            <img src="img/skill_js.png" alt="JS" height="100" width="100"/>
+            <img src="img/skill_php.png" alt="PHP" height="100" width="100"/>
+            <img src="img/skill_html.png" alt="SQL" height="100" width="100"/>
+        </div>
+        <div class="skills2" style="display:none;">
+            <img src="img/skill_html.png" alt="jQuery" height="100" width="100"/>
+            <img src="img/skill_html.png" alt="AJAX" height="100" width="100"/>
+            <img src="img/skill_html.png" alt="Git" height="100" width="100"/>
+            <img src="img/skill_html.png" alt="jSON" height="100" width="100"/>
+            <img src="img/skill_html.png" alt="CMS" height="100" width="100"/>  
+        </div>
+        
+        <section id="education" class="content content--c2">
+            <div style="width: 600px; float: left;">
+                <p>Bachelor of Engineering in Information Technology, 2013 -
+                Turku University of Applied Sciences
+                </p><br>
+                        <p>Bachelor of Engineering in Industrial Management, 2012 - 2013
+                         Centria University of Applied Sciences (Incomplete)
+                </p><br>
+                <p>Secondary vocational education in Automatics, 2008 - 2012
+                 Tallinn Polytechnic School
+                </p>
+                <div id="back_button" class="menu"><a href="site.html#intro">Back</a></div>
+            </div>
+        </section>
+        
+         <section id="experience" class="content content--c3">
+            <div style="width: 600px; float: left;">
+                <p>Web Developer Trainee, Golden Service, Turku (Finland), 5-7/2015
+                Updated website based on Joomla CMS and developed website
+                based on WordPress CMS. Worked with CSS in several templates.</p><br>
+                <p>Python Programmer Trainee, Intern.ly, Helsinki (Finland), 7-8/2014
+                Worked on website using Flask framework and python programming
+                language. Used PyCharm IDE.</p><br>
+                <p>Animator (Entertainer), Remarc Agency, Corfu (Greece), 4-8/2013
+                Worked in Louis Grand Hotel and Louis Kerkyra Golf Hotel through
+                the Remarc Agency. Performed day and evening animation activities
+                such as sport, games and guest contact (customer service).</p>
+                <p>
+                Automatic Trainee, Electronics Design, Tallinn (Estonia), 9-12/2011
+                Programmed amtega16 microcontrollers in assembler, tested GPS devices and performed soldering works with printed circuit boards.</p>
+                <div id="back_button" class="menu"><a href="site.html#intro">Back</a></div>
+            </div>
+         </section>
+        <section id="projects" class="content content--c5">
+            <div>
+                <div style="width: 600px; float: left;"><p>PHP Project<p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et nisl nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc molestie nulla lacus, et mattis velit varius ac. Sed tempus elit dui, porta commodo neque fringilla id. Donec sed metus vel ex lacinia euismod ut vel ante. Vestibulum sagittis tortor turpis, nec feugiat lorem sagittis sed. Curabitur condimentum massa sit amet sagittis aliquam. Cras porttitor turpis tortor, in efficitur nunc imperdiet quis.
+
+                        Morbi ultricies justo condimentum dapibus volutpat. Ut ornare maximus vehicula. Phasellus quis metus elit. Phasellus auctor sed tellus in ornare. Mauris et luctus sem, ac blandit nisl. Sed accumsan aliquam risus, eu tincidunt sapien. Phasellus sagittis turpis at accumsan convallis. Cras sit amet iaculis dui. Nam pellentesque mauris ut aliquam bibendum. Pellentesque scelerisque pulvinar maximus. Duis euismod felis at tortor posuere ultricies.
+
+                        Etiam maximus dapibus enim eu tincidunt. Nullam dui erat, efficitur non tristique ut, ultrices non lacus. Aliquam accumsan ante at ultricies sagittis. Vestibulum venenatis luctus elit, id iaculis magna facilisis eu. Vivamus vitae magna ornare, sollicitudin tellus nec, pharetra ante. Morbi vitae efficitur purus. Donec maximus nisl eu porta sodales.
+
+                    </p>
+                </div>
+                <div style="width: 600px; float: left;"><p>Thesis Project</p>
+                    <p> Duis hendrerit gravida ex, et condimentum augue posuere quis. Proin faucibus tincidunt nibh in lacinia. Nullam sit amet ligula id urna tristique dictum in in magna. Fusce faucibus euismod sollicitudin. Donec at ipsum in nibh finibus luctus ac sit amet nisl. Maecenas laoreet in turpis in maximus. Nullam at sem ac odio aliquam suscipit vitae quis diam. Vestibulum quis gravida nisi. Vestibulum tincidunt urna viverra rutrum dignissim. Nunc vel enim a libero blandit cursus. Maecenas mauris ligula, finibus at facilisis sed, suscipit sed tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra felis et tincidunt condimentum.
+
+                        Donec dictum pellentesque ante a iaculis. In hac habitasse platea dictumst. In dignissim justo ac magna efficitur blandit. Morbi consequat in felis vitae tincidunt. Curabitur et lacinia enim. Quisque tincidunt neque sed facilisis tristique. In venenatis nulla ac lectus volutpat vestibulum. Duis sollicitudin elit at imperdiet fringilla. Mauris quis tempus risus, in egestas sem. Duis pretium, ligula nec vulputate finibus, turpis elit porttitor turpis, mollis dignissim justo felis et leo. Nam id arcu eu eros venenatis posuere.
+                    </p>
+                </div>   
+                <div id="back_button" class="menu"><a href="site.html#intro">Back</a></div>
+                <footer>
+                    <p style="color:black"> Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    &copy;
+                    </p>
+                </footer>
+            </div>
+        </section>
+    </body>
+
+<!--tilter effects-->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function() {
+    var tiltSettings = [
+    {},
+    {
+            movement: {
+                    imgWrapper : {
+                            translation : {x: 5, y: 5, z: 0},
+                            reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+                    },
+                    caption : {
+                            translation : {x: 10, y: 10, z: [0,50]},
+                            reverseAnimation : {duration : 1000, easing : 'easeOutQuart'}
+                    },
+                    shine : {
+                            translation : {x: 50, y: 50, z: 0},
+                            reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+                    }
+            }
+    }];
+
+    function init() {
+            var idx = 0;
+            [].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) {
+                    idx = pos%2 === 0 ? idx+1 : idx;
+                    new TiltFx(el, tiltSettings[idx-1]);
+            });
+    }
+
+    // Preload all images.
+    imagesLoaded(document.querySelector('main'), function() {
+            document.body.classList.remove('loading');
+            init();
+    });
+
+
+})();
+</script>
+
+<!--smooth scrolling-->
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 800, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+  });
+} // End if
+});
+});
+
+</script>                
+
+<!--ripples effect-->
+<script src="js/jquery.ripples.js"></script>
+<script>$(document).ready(function() {
+    try {
+            $('body').ripples({
+                    resolution: 512,
+                    dropRadius: 20, //px
+                    perturbance: 0.04,
+            });
+            $('main').ripples({
+                    resolution: 512,
+                    dropRadius: 20, //px
+                    perturbance: 0.04,
+                    interactive: false
+            });
+    }
+    catch (e) {
+            $('.error').show().text(e);
+    }
+});</script>
+</html>
